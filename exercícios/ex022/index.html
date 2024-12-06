@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando um degradê no CSS</title>
+    <style>
+        * { /*Configurações globais CSS*/
+            height: 100%; /*Junto com o top do linear gradient coloca de cima pra baixo e degradê*/
+
+        }
+        
+        body {
+            background-image: /*O background-image: linear-gradient(to right or left or , cor 1, cor 2)*/linear-gradient(to top /*Voc~e tbm cpode colocar tbm o angulo, substituindo colocando da seguinte maneira angulo + deg*/, black, rgb(0, 43, 0));
+            background-attachment: fixed; /*-> deixa o degradê fixo*/
+        }
+
+        h1 {
+            color: aliceblue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Testando gradientes</h1>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <p>Vc vai precisar de 3 imagens, uma pequena (300px), outra média (700px) e uma outra grande (1000px)</p>
+    <p>Para fazer isso utilize a tag picture e coloque a imagem que vc deseja dentro da tag, após isso vc vai colocar uma outra tag chamado "source:media:type" e em media vc vai colocar o tamanho máximo que pode passar até a maior imagem, como por exemplo 1000px, a imagem que vc vai colocar se o tamanho for menor que 1000px, o formato da imagem e a imagem grande se passar de 1000px , assim se a imagem tiver a largura igual a 1000px ele vai exibir a imagem grande e se o tamanho da tela for menor do que 1000px ele vai exibir a imagem média.</p>
+    <h4>OBS: Se vc quiser no tamanho máximo vc pode colocar 50px a mais pois é o tamanho da tela de rolagem e para tamanhos pequenos SEMPRE colocar ACIMA da maior </h4>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/pequeno.png" type="image/png">
+
+        <source media="(max-width: 1050px)" srcset="images/Média.png" type="image/png">
+        
+        <img src="images/grande.png" alt="Foto de tamanho grande">
+    </picture>
+</body>
+</html>

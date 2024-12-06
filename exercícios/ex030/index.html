@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            margin: 0px;
+        }
+        
+        header {
+            width: 1000px;
+            background-color: white;
+            padding: 10px;
+            margin: auto;
+            margin-bottom: 5px;
+        }
+
+        main {
+            width: 1000px;
+            background-color: white;
+            padding: 10px;
+            margin: auto;
+            margin-bottom: 5px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+        }
+
+        footer > p {
+            margin: 0px
+        }
+
+        nav {
+            background-color: rgb(120, 120, 120);
+            padding: 3px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(186, 186, 186);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Esportes, política e tecnologia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, labore totam? Blanditiis voluptatum voluptate dignissimos! Corporis consequatur et illum ipsam deleniti maxime cupiditate in architecto minus non asperiores, suscipit quo.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore soluta distinctio quod nesciunt atque? At, rem numquam praesentium est sed optio provident, mollitia eaque tenetur ratione exercitationem incidunt aut quidem.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, facere reiciendis amet unde veniam, expedita maxime quam doloremque accusamus nihil maiores saepe modi magni at esse autem eligendi. Ex, voluptates.</p>
+                <aside>Escrito por João José</aside>
+            </article>
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus nulla consequuntur unde fuga nobis distinctio quos veritatis in quae? Eligendi nemo debitis numquam dignissimos cumque sequi ex nostrum neque corrupti!
+                </p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita delectus cupiditate eligendi incidunt dolore? Esse animi quia, nihil dolor accusamus magnam, enim rerum aspernatur repellat maxime quae quisquam ex. Corrupti?</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Notícias sobre o Mundo</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius harum iusto beatae magnam, distinctio tempore neque velit, et voluptate corrupti vero suscipit, magni repudiandae enim amet eaque optio dolorum illum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam et vero laudantium magnam, modi cupiditate vitae nemo ducimus enim quos omnis maxime sequi tenetur alias, possimus unde sint fugit reiciendis?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam blanditiis itaque error cupiditate aperiam mollitia assumenda, temporibus fuga perspiciatis harum ipsam aut quae ipsum distinctio molestiae magni iure. Quis, illo!</p>
+                <aside>
+                    <p>Escrito por Fernando Valado</p>
+                </aside>
+            </article>
+            
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Murilo Machado</p>
+    </footer>
+</body>
+</html>
