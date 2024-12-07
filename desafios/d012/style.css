@@ -47,6 +47,7 @@ main p {
     font-family: 'Patrick Hand';
     font-size: 4vw;
     padding: 0px 0px 70px 20px;
+    line-height: 1.7em;
 }
 
 .fundo {
