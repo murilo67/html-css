@@ -10,18 +10,31 @@
         }
 
         table {
-            width: 300px;
+            width: 400px;
             border-collapse: collapse;
         }
 
+        caption {
+            color: white;
+            padding: 5px 0px;
+            font-size: 1.3em;
+            font-weight: bold;
+            background-color: #434343;
+        }
+
         td, th {
+            font-size: 1.2em;
             border: 1px solid black;
-            padding: 3px;
+            padding: 10px;
             
         }
 
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: #434343;
             color: white;
         }
     </style>
@@ -29,10 +42,11 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -48,10 +62,26 @@
                 <td>Rio de Janeiro</td>
                 <td>17.2M</td>
             </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td>8.9M</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>10.8M</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>13.4M</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td>4.5M</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td>00000</td>
             </tr>
         </tfoot>
