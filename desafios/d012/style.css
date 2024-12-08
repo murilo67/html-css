@@ -45,7 +45,7 @@ header a:hover {
 
 main p {
     font-family: 'Patrick Hand';
-    font-size: 4em;
+    font-size: 3em;
     padding: 0px 0px 70px 20px;
     line-height: 1.7em;
 }
@@ -86,7 +86,7 @@ footer > p {
     color: white;
     font-family: 'Open Sans';
     font-weight: 400;
-    font-size: 175%;
+    font-size: 150%;
     text-align: center;
     margin-bottom: 0px;
     padding: 5px 0px;
