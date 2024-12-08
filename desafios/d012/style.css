@@ -72,6 +72,7 @@ main p {
 .fundo p {
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.556);
+    text-shadow: 1px 1px 0px black;
     padding: 5px;
     color: white;
     margin-left: 20px;
