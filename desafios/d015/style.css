@@ -22,6 +22,7 @@ div#telefone {
 }
 
 iframe {
+    background-color: white;
     position: absolute;
     left: 22px;
     top: 80px;
@@ -31,15 +32,19 @@ iframe {
 }
 
 #redes-sociais {
-    margin-left: 93%;
+    text-align: right;
 }
 
 #redes-sociais > a > img {
     width: 47px;
+    margin-top: 15px;
     border-radius: 100%;
-    margin-top: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.633);
+    box-sizing: border-box;
 }
 
 #redes-sociais > a > img:hover {
-    border: 2px solid white;
+    border: 2px solid #ffffffd8;
+    transform: translate(-3px, -3px);
+    transition: 0.1s;
 }
