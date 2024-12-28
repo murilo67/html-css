@@ -231,9 +231,3 @@ footer > p > a:hover {
     color: #1d2b1d;
     font-weight: bolder;
 }
-
-@media screen and (max-width: 768px) {
-    header > nav > a {
-        padding: 5px;
-    }
-}
