@@ -234,6 +234,6 @@ footer > p > a:hover {
 
 @media screen and (max-width: 768px) {
     header > nav > a {
-        padding: 3px;
+        padding: 4px;
     }
 }
