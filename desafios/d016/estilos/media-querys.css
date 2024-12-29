@@ -12,13 +12,13 @@
 
     #container > #imagem {
         display: block;
-        float: left;
+        float: right;
         width: 30%;
         height: 360px;
     }
 
     #login {
-        float: right;
+        float: left;
         width: 70%;
     }
 
@@ -37,13 +37,13 @@
     }
 
     #container > #imagem {
-        float: left;
+        float: right;
         width: 50%;
         height: 360px;
     }
 
     #container > #login {
-        float: right;
+        float: left;
         width: 50%;
         height: 100%;
     }

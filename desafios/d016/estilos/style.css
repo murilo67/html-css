@@ -17,11 +17,11 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
-
+    transform: translate(-50%, -50%);
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
 }
@@ -66,12 +66,22 @@ input[type='email'], input[type='password']{
     padding: 10px;
 }
 
+input[type='email']:focus-within, input[type='password']:focus-within {
+    background-color: white;
+}
+
 input[type='submit'] {
     width: 100%;
     background-color: rgb(16, 176, 176);
     color: white;
-    border: 1px solid rgb(51, 72, 75);
+    border: none;
     padding: 9px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(9, 87, 87);
+
 }
 
 #esqueci-senha {
@@ -83,6 +93,7 @@ input[type='submit'] {
     border: 1px solid rgb(51, 72, 75);
     padding: 9px;
     margin-top: 10px;
+    font-size: 0.9em;
 }
 
 #esqueci-senha:hover {
