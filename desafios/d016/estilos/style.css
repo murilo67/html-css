@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: blueviolet;
+}
+
+#container {
+    background-color: white;
+    width: 260px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+}
+
+#container > #imagem {
+    display: block;
+    background-image: url(../imagens/metal.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    height: 200px;
+}
+
+#login {
+    padding: 10px;
+}
+
+#container > #login > h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+.material-symbols-outlined {
+    color: white;
+    font-size: 32px;
+}
+
+#email, #senha {
+    background-color: purple;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+input[type='email'], input[type='password']{
+    background-color: rgb(169, 255, 255);
+    width: 83%;
+    padding: 10px;
+}
+
+input[type='submit'] {
+    width: 100%;
+    background-color: rgb(16, 176, 176);
+    color: white;
+    border: 1px solid rgb(51, 72, 75);
+    padding: 9px;
+}
+
+#esqueci-senha {
+    display: block;
+    color: rgb(51, 72, 75);
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid rgb(51, 72, 75);
+    padding: 9px;
+    margin-top: 3px;
+}
+
+#esqueci-senha:hover {
+    background-color: rgb(68, 189, 189);
+}
+
+#mail-icon {
+    color: rgb(51, 72, 75);
+    font-size: 15px;
+}
+
