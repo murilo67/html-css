@@ -20,15 +20,29 @@ header > h1 {
     text-align: center;
 }
 
-menu {
-    display: block
+#menu {
+    background-color: rgb(48, 48, 48);
+    display: block;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
 }
 
-menu > ul {
+#menu:hover {
+    background-color: white;
+    color: rgb(48, 48, 48);
+}
+
+nav {
+    display: none;
+}
+
+nav > ul {
     list-style-type: none;
 }
 
-menu a {
+nav a {
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -38,7 +52,7 @@ menu a {
     border: 1px solid gray;
 } 
 
-menu a:hover {
+nav a:hover {
     background-color: gray;
 }
 
@@ -46,6 +60,19 @@ main {
     width: 90vw;
     background-color: white;
     margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 10px;
+    border-radius: 10px;
+}
 
+article > h2 {
+    padding-bottom: 20px;
+}
+
+article > p {
+    text-align: justify;
+    line-height: 1.7em;
+    margin-bottom: 10px;
+    text-indent: 20px;
 }
