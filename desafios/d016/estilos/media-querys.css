@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+
+    body {
+        background-image: linear-gradient(to top,  #00ffff,purple );
+    }
+
     #container {
         width: 90vw;
     }
@@ -9,11 +14,42 @@
         display: block;
         float: left;
         width: 30%;
-        height: 350px;
+        height: 360px;
     }
 
     #login {
         float: right;
         width: 70%;
+    }
+
+    input[type='email'], input[type='password'] {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: linear-gradient(to top,  #00ffff,purple );
+    }
+
+    #container {
+        width: 990px;
+    }
+
+    #container > #imagem {
+        float: left;
+        width: 50%;
+        height: 360px;
+    }
+
+    #container > #login {
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    input[type='email'], input[type='password'] {
+        width: 90%;
+        padding: 12px; 
     }
 }
