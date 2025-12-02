@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: lightblue;
+            height: 300px;
+            width: 300px;
+            
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: #0000ff67;
+            */
+            border: 10px solid #0000ff67;
+            
+            /*
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            padding: 10px (top e bottom) 10px (right left);
+            Começa de cima e gira no sentido horário
+            */
+            padding: 10px;
+            
+            /*
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin: auto; -> Coloca o bloco no meio
+            margin: 10px (top e bottom) 10px (right left);
+            Começa de cima e gira no sentido horário
+            */
+            margin: 10px;
+            
+
+            /*
+            outline-width: 10px;
+            outline-style: solid;
+            outline-color: aqua;
+            Extrapola a margem
+            */
+            outline: 10px solid aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos são exemplos de caixas box-level, mas os <a href="#">links</a> são exemplos de caixas inline-level</p>
+</body>
+</html>

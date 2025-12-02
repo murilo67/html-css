@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <picture> <!--Permite a criação de várias sources-->
+        <source media="(max-width: 750px)" srcset="media/P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="media/M.png" type="image/png"> <!--Se for menor que 1050px-->
+        <img src="media/G.png" alt="imagem-grande">
+    </picture> <!--A ordem é de cima para baixo, do menor para o maior-->
+    <h1>Reproduzindo áudio</h1>
+    <audio preload="metadata" autoplay controls> <!--auto: Só vai ser considerado o site carregado quando já carregou todo o áudio tbm; metadata: só vai carregar algumas informações; none: Não faz nada-->
+        <source src="media/Purple Desire - The Grey Room _ Clark Sims.mp3" type="audio/mpeg">
+        <p>Infelizmente este navegador não suporta a reprodução de áudio</p>
+    </audio>
+</body>
+</html>

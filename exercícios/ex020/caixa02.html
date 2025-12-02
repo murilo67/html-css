@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px 5px;
+            /*Cima e Baixo - Esquerda e direita*/
+        }
+
+        nav {
+            background-color: #565656;
+            padding: 3px;
+            box-shadow: 1px 1px 3px #000000a8;
+            /*Deslocamento horizontal - Deslocamento vertical - Embaçamento - Espalhamento (opcional) - Cor*/
+            /*
+            Outset -> Sombra externa
+            Inset -> Sombra interna
+            Blur -> Embaçamento
+            Spread -> Espalhamento
+            */
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px 5px 5px 5px;
+            /*Começa da esquerda pra cima e vai girando no sentido horário*/
+        }
+
+        article {
+            background-color: lightgray;
+        }
+
+        article > aside {
+            background-color: rgb(126, 126, 126);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 1px;
+            margin: 0px;
+            text-align: center;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header> <!--Cabeçalho-->
+        <h1>Seja bem-vindo</h1>
+        <nav> <!--Menu-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!--Conteúdo principal-->
+        <section> <!--Seção-->
+            <article> <!--Conteúdo independente (Exemplo: post de blog, comentários...)-->
+                <h1>Notícias do Brasil</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit quos beatae, quaerat minima, odit dolorem esse cupiditate aliquid corporis ex dicta iure vitae fuga necessitatibus voluptatum delectus, similique voluptatem atque.</p>
+                <aside> <!--Conteúdo acessório que é indiretamente relzionado ao conteúdo principal (Exemplo: Barras laterais)-->
+                    Artigo escrito por Dyana
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer> <!--Rodapé-->
+        <p>Desenvolvido pelo Murilo</p>
+    </footer>
+    <div></div>
+</body>
+</html>

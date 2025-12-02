@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+@font-face {
+    font-family: 'Idroid';
+    src: url('../fonts/idroid.otf') format('opentype');
+}
+
+* { /*NOVO*/
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root { /*NOVO*/
+    --cor_cabeçalho1: #0E4749;
+    --cor_cabeçalho2: #78a3a4; /*#CDE6F5*/
+    --cor_destaque1: #002626;
+    --cor_suave: #629460;
+    --cor_fundo: #F2D492;
+    --fonte_título: 'Idroid';
+    --fonte_cabeçalho: 'Oswald';
+}
+
+body {
+    background-color: var(--cor_fundo);
+}
+
+header {
+    background-image: linear-gradient(to top, var(--cor_cabeçalho1), var(--cor_cabeçalho2));
+    /*height: 210px;*/
+    min-height: 210px;
+    color: aliceblue;
+    padding-bottom: 10px;
+}
+
+header > h1 {
+    font-family: var(--fonte_cabeçalho);
+    text-transform: uppercase; /*NOVO*/
+    font-weight: 400;
+    font-size: 2.7em;
+    text-shadow: 3px -1px 7px #000000bc;
+    padding: 35px 0px 15px 0px;
+}
+
+header > p {
+    padding: 0px 15px 30px 15px;
+    text-shadow: 3px -1px 7px #000000bc;
+    max-width: 400px;
+    margin: auto;
+}
+
+header > h1, header > p {
+    text-align: center;
+}
+
+header > nav {
+    margin-left: 10px;
+}
+
+header > nav > a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+    padding: 7px;
+    border-radius: 5px;
+    transition-duration: 0.4s; /*NOVO*/ 
+}
+
+header > nav > a:hover {
+    background-color: var(--cor_cabeçalho2);
+    color: var(--cor_cabeçalho1);
+}
+
+main {
+    border-radius: 15px 15px 0px 0px;
+    max-width: 750px; /*NOVO*/
+    box-shadow: 2px 0px 7px 0px #554a32ab;
+}
+
+main  h1, main  h2 { /*NOVO*/
+    margin: 20px 0px 5px 0px;
+    font-family: var(--fonte_título);
+    color: var(--cor_destaque1);
+}
+
+main > h2 {
+    background-image: linear-gradient(to right, var(--cor_cabeçalho2), aliceblue);
+}
+
+strong {
+    color: var(--cor_destaque1);
+}
+
+main, #container, #video {
+    background-color: aliceblue;
+    padding: 15px;
+    text-indent: 20px; /*NOVO*/
+    line-height: 2.5em; /*NOVO*/
+    max-width: 750px;
+    margin: auto;
+}
+
+main > h1, main > h2 {
+    text-indent: 5px;
+}
+
+main > picture > img, main > picture > source {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+}
+
+#bugdroid {
+    display: block;
+    margin: 20px auto;
+    width: auto; /*NOVO*/
+}
+
+/*#video {
+    background-color: var(--cor_destaque1);
+    box-shadow: 2px 0px 7px 0px #554a32ab;
+    padding-bottom: 400px;
+    position: relative;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 10%;
+    left: 12%;
+    width: 75%;
+    height: 79%;
+}*/
+
+#video {
+    background-color: var(--cor_destaque1);
+    box-shadow: 2px 0px 7px 0px #554a32ab;
+    padding: 15px;
+    position: relative;
+    padding-bottom: 60vh;
+}
+
+#video iframe {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 81%;
+    height: 81%;
+}
+
+#container {
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 2px 0px 7px 0px #554a32ab;
+    margin-bottom: 10px;
+}
+
+#aprender {
+    margin: 15px 0px;
+}
+
+#título {
+    border-radius: 15px 15px 0px 0px;
+    background-color: var(--cor_destaque1);
+    padding: 10px;
+    text-indent: 0;
+    color: aliceblue;
+    font-weight: bold
+}
+
+#informação {
+    border-radius: 0px 0px 15px 15px;
+    background-color: var(--cor_suave);
+    padding: 10px;
+}
+
+main > p > a, section > #aprender > #informação > p > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #002626;
+    background-color: var(--cor_cabeçalho2);
+}
+
+main > p > a::after, section > #aprender > #informação > p > a::after {
+    content: '\00A0\1F517'; /*NOVO*/
+}
+
+main > p > a:hover, section > #aprender > #informação > p > a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: '\2714\00A0\00A0'; /*NOVO*//*\00A0 -> Espaço; Não é compatível com todo tipo de navegador*/
+    columns: 2; /*NOVO*/
+    list-style-position: inside; /*NOVO*/
+    /*Para que serve a margem negativa?*/
+}
+
+footer {
+    background-color: var(--cor_cabeçalho1);
+}
+
+footer {
+    text-align: center;
+    color: aliceblue;
+    padding: 4px 0px;
+    
+}
+
+footer > p >  a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+}
+

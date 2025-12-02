@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+      @font-face {
+         font-family: 'Fortalesia';
+         src: url('fonts/FortalesiaPlain.otf') format('opentype'), url('fonts/FortalesiaScript.otf') format('opentype');
+      
+      /*
+      Tipos de format()
+      - opentype (otf)
+      - truetype (ttf)
+      - embedded-opentype
+      - truetype-aat (Apple Advanced Typography)
+      - svg
+
+      Cada navegador suporta tipos de fontes diferentes
+      */
+      }
+        body {
+            font-family: 'Fortalesia';
+        }
+
+        h1 {
+         font-size: 3em;
+        }
+
+        p {
+         font-size: 2em;
+        }
+    </style>
+ </head>
+ <body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium possimus veritatis quis. Exercitationem quidem ut dolorem impedit quisquam delectus optio. Maxime possimus illo fugiat vero provident natus aut. Quasi, nisi?</p>
+ </body>
+ </html>
