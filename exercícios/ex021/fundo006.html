@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo fixo na tela</title>
+    <style>
+        body {
+            /*background-color: black;
+            height: 97vh;
+            background-image: url('images/wallpaper002.jpg');
+            background-position: center top;
+            background-repeat: repeat-y;
+            background-size: cover; background-attachment: fixed;*/
+            background: black url('images/wallpaper002.jpg') center top repeat-y fixed; /*Colocar backgroun-size separado*/
+            background-size: cover;
+
+            /*
+            contain: Mostra 100% da imagem sem achatar
+            cover: Não mostra 100% da imagem, porém mostra 100% da viewport
+            width + height
+            */
+             
+            /*
+            scroll (Padrão): Quando scrolamos a imagem de fundo scrola tambem
+            fixed: Quando scrollamos o site, a imagem de fundo fica fixa
+            */
+
+            /*
+            Shorthand - background
+            color - image - position - repeat - size - attachment
+            */
+        }
+        
+        main {
+            background-color: white;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ex doloremque sit dolorum qui. Ipsam molestiae saepe alias fugiat, numquam expedita, praesentium nihil deserunt suscipit corrupti harum et dolore minus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tenetur ut quae libero voluptatibus dolorum. Cumque, cupiditate saepe vel repudiandae enim consectetur modi doloremque officia nisi, voluptatibus minima eius reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum accusantium in libero consequatur, nihil corporis perspiciatis esse. Iusto laboriosam commodi, dolor dignissimos iure facilis sapiente ullam ex asperiores nemo magni?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ex doloremque sit dolorum qui. Ipsam molestiae saepe alias fugiat, numquam expedita, praesentium nihil deserunt suscipit corrupti harum et dolore minus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tenetur ut quae libero voluptatibus dolorum. Cumque, cupiditate saepe vel repudiandae enim consectetur modi doloremque officia nisi, voluptatibus minima eius reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum accusantium in libero consequatur, nihil corporis perspiciatis esse. Iusto laboriosam commodi, dolor dignissimos iure facilis sapiente ullam ex asperiores nemo magni?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ex doloremque sit dolorum qui. Ipsam molestiae saepe alias fugiat, numquam expedita, praesentium nihil deserunt suscipit corrupti harum et dolore minus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tenetur ut quae libero voluptatibus dolorum. Cumque, cupiditate saepe vel repudiandae enim consectetur modi doloremque officia nisi, voluptatibus minima eius reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum accusantium in libero consequatur, nihil corporis perspiciatis esse. Iusto laboriosam commodi, dolor dignissimos iure facilis sapiente ullam ex asperiores nemo magni?</p>
+    </main>
+</body>
+</html>

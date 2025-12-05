@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Ver;
+}
+
+:root {
+    --fonte-titulo: 'Passion One';
+    --fonte-secundaria: Verdana, Geneva,Tahoma, sans-serif;
+    --fonte-texto: 'Sriracha';
+    --cor01: black;
+    --cor02: white;
+    --cor03: #00000057;
+}
+
+
+
+header {
+    background-color: var(--cor01);
+    height: 200px;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--cor02);
+    font-family: var(--fonte-titulo);
+    text-transform: uppercase;
+    font-size: 3.5em;
+    padding: 50px 0px 10px 0px;
+}
+
+header p, header a {
+    color: var(--cor02);
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+}
+
+header a {
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin: 0px 20px;
+}
+
+main p {
+    font-family: var(--fonte-texto);
+    font-size: 1.7em;
+    line-height: 2em;
+    margin: 20px 0px;
+}
+
+.sem-fundo p {
+    margin: 70px 0px;
+}
+
+.com-fundo {
+    background-color: cadetblue;
+    margin: 20px -20px;
+    padding: 20px;
+}
+
+#imagem01 {
+    background-image: url('../images/background001.jpg');
+    background-size: 100% 100vh;
+    background-position: right center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#imagem02 {
+    background-image: url('../images/background002.jpg');
+    background-size: 100% 100vh;
+    background-position: right center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.com-fundo article {
+    display: inline-block;
+    background-color: var(--cor03);
+    padding: 0px 20px;
+    color: var(--cor02);
+    text-shadow: 1px 1px 1px black;
+}
+
+footer {
+    background-color: var(--cor01);
+    padding: 10px;
+}
+
+footer p, footer a {
+    color: var(--cor02);
+    font-family: var(--fonte-secundaria);
+    text-align: center;
+    text-decoration: none;
+}
+
+footer a {
+    font-weight: bold;
+}
