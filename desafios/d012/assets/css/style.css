@@ -5,7 +5,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Ver;
 }
 
 :root {
@@ -28,8 +27,8 @@ header {
 header h1 {
     color: var(--cor02);
     font-family: var(--fonte-titulo);
-    text-transform: uppercase;
-    font-size: 3.5em;
+    font-variant: small-caps; /*NOVO*/
+    font-size: 3.4em;
     padding: 50px 0px 10px 0px;
 }
 
@@ -53,13 +52,13 @@ main {
 
 main p {
     font-family: var(--fonte-texto);
-    font-size: 1.7em;
+    font-size: 5vw;
     line-height: 2em;
     margin: 20px 0px;
 }
 
 .sem-fundo p {
-    margin: 70px 0px;
+    margin: 70px 15px;
 }
 
 .com-fundo {
@@ -70,15 +69,15 @@ main p {
 
 #imagem01 {
     background-image: url('../images/background001.jpg');
-    background-size: 100% 100vh;
-    background-position: right center;
+    background-size: cover;
+    background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
 #imagem02 {
     background-image: url('../images/background002.jpg');
-    background-size: 100% 100vh;
+    background-size: cover;
     background-position: right center;
     background-attachment: fixed;
     background-repeat: no-repeat;
