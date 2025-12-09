@@ -38,6 +38,13 @@ iframe {
     width: 50px;
     border-radius: 50%;
     margin: 15px 10px;
-    text-align: right;
     margin-left: auto; /*NOVO*/
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.527);
+}
+
+#botoes img:hover {
+    border: 1.7px solid #ffffff99;
+    box-sizing: border-box; /*Borda dentro da caixa*/
+    transform: translate(-3px, -3px);
+    transition: transform 0.2s; /*NOVO*/
 }
