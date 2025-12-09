@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        iframe {
+            width: 95vw;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque rerum nulla voluptatibus eveniet, id perferendis in, minima repellendus pariatur, ex ducimus expedita porro ipsum omnis neque eaque voluptate nihil! Cupiditate?</p>
+    <ul>
+        <li><a href="pag-extra/pag001.html" target="frame">1° página</a></li>
+        <li><a href="pag-extra/pag002.html" target="frame">2° página</a></li>
+        <li><a href="pag-extra/pag003.html" target="frame">3° página</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque rerum nulla voluptatibus eveniet, id perferendis in, minima repellendus pariatur, ex ducimus expedita porro ipsum omnis neque eaque voluptate nihil! Cupiditate?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque rerum nulla voluptatibus eveniet, id perferendis in, minima repellendus pariatur, ex ducimus expedita porro ipsum omnis neque eaque voluptate nihil! Cupiditate?</p>
+    <iframe frameborder="1" name="frame" srcdoc="<body style='background-color: lightgreen;'><h1>Escolha uma das opções acima</h1></body>"> <!--Você pode colocar tags html no srcdoc-->
+        Infelizmente seu navegador não suporta iframes
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde magni modi voluptatum deserunt iste velit non officia pariatur? Atque maxime voluptatum eum? Perspiciatis asperiores architecto, accusamus consequatur dicta quidem esse! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae nam consequatur fugiat perspiciatis, possimus numquam excepturi unde iusto ratione ullam doloremque quaerat nisi voluptates, recusandae est ab harum, dolore cumque.</p>
+</body>
+</html>
