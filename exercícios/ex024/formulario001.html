@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form method="post" action="cadastro.php" autocomplete="off">
+        <p> 
+            <label for="inome">Nome:</label> <!--Colocar o id-->
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p> 
+            <label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <input type="submit" value="Enviar">
+    </form>
+    <!--
+    GET (Padrão) -> Aparece na barra de busca
+    Use quando:
+    - Não são dados sensíveis
+    - Limite: 3KB (3000 letras)
+    POST -> Não aparece na barra de busca, porém aparece do mesmo jeito
+    Use quando:
+    - Quando há dados sensíveis
+    - Quando há o envio de arquivos (fotos, vídeos, documentos)
+    -->
+</body>
+</html>
