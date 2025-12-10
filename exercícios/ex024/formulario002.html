@@ -7,20 +7,25 @@
 </head>
 <body>
     <h1>Teste de formulário</h1>
-    <form action="cadastro.php" method="post" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
             <label for="iusu">Usuário: </label>
-            <input type="text" name="usu" id="iusu" required minlength="8" size="10" placeholder="Nome de Usuário"> <!--
+            <input type="text" name="usu" id="iusu" required minlength="8" size="10" placeholder="Nome de Usuário" autocomplete="username"> 
+            <!--
             required: Obrigatório
             minlength: Número de caracteres mínimos
             maxlength: Número de caracteres máximos
             size: Quantas letras mostradas
             placeholder: Texto no campo de texto
+            autocomplete: Manda sugestões para o campo de texto 
+            - username: Nome de usuário
+            - current-password: Senha atual 
+            - new-password: Nova senha
             -->
         </p>
         <p>
             <label for="isenha">Senha: </label>
-            <input type="password" name="Senha" id="isenha" required minlength="8">
+            <input type="password" name="Senha" id="isenha" required minlength="8" autocomplete="new-password">
         </p>
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
