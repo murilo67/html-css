@@ -2,4 +2,25 @@
     body {
         background-image: linear-gradient(to top, #78ffffdb, purple);
     }
+
+    main {
+        width: 90vw;
+        padding: 0;
+    }
+
+    main #imagem {
+        float: left;
+        width: 50%;
+        height: 110%;
+    }
+
+    main #login {
+        float: right;
+        width: 48%;
+        padding: 10px;
+    }
+
+    input[type='email'], input[type='password'] {
+        width: 270px;
+    }
 }
