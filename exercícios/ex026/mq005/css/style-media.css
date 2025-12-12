@@ -1,0 +1,16 @@
+@media screen and (min-width: 768px) {
+    #hamburguer {
+        display: none;
+    }
+
+    header nav {
+        margin-left: 5px;
+    }
+
+    header a {
+        display: inline-block;
+        text-align: left;
+        margin-right: 20px;
+        padding: 10px;
+    }
+}

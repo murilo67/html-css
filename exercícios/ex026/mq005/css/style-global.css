@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #8b8b8b;
+    padding: 15px 15px 0px 15px;
+}
+
+#hamburguer {
+    display: block;
+    background-color: #3b3b3b;
+    color: white;
+    margin: 0px -15px;
+    padding: 10px;
+    text-align: center;
+}
+
+#hamburguer:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer; /*NOVO*/
+}
+
+header h1 {
+    margin: 20px 0px;
+    text-align: center;
+}
+
+header nav {
+    display: none;
+}
+
+header a {
+    display: block;
+    background-color: #4d4d4d;
+    color: white;
+    border: 1px solid #676767;
+    margin: 0px -15px;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header a:hover {
+    background-color: #6c6c6c;
+}
+
+main {
+    background-color: #ececec;
+    padding: 15px;
+    text-align: justify;
+    max-width: 600px;
+    margin: 15px auto;
+}
+
+main h2 {
+    margin-bottom: 10px ;
+}
+
+main p {
+    margin-bottom: 15px;
+    line-height: 2em;
+}
+

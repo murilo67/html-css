@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: purple;
+    height: 100vh;
+}
+
+main {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    width: 250px;
+    height: 530px;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden; /*NOVO*//*Tudo que tiver fora da borda ficará escondido*/
+}
+
+main #imagem {
+    background-color: chocolate;
+    background-image: url('../assets/images/metal.jpg');
+    background-position: center left;
+    background-size: cover;
+    height: 200px;
+    margin: -10px -10px 0px -10px;
+}
+
+main h1 {
+    text-align: center;
+    padding: 10px 0px;
+}
+main p {
+    margin-bottom: 10px;
+}
+
+#campo-email, #campo-senha {
+    background-color: purple;
+    padding: 5px;
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1
+}
+
+input {
+    display: block;
+}
+
+input[type='email'], input[type='password'] {
+    display: inline-block;
+    padding: 5px 0px;
+    background-color: #b4fbff;
+    color: black;
+}
+
+input[type='email']::placeholder, input[type='password']::placeholder {
+    color: #000000a5;
+    padding: 5px;
+    
+}
+
+#senha, #usuario {
+    display: inline-block;
+    color: white;
+    font-variation-settings: 'FILL' 1;
+    font-size: 30px;
+}
+
+input[type='submit'] {
+    width: 100%;
+    color: white;
+    font-size: 1em;
+    background-color: purple;
+    border: 1px solid purple;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+input[type='submit']:active {
+    background-color: white;
+    color: purple;
+}
+
+#esqueceu-senha {
+    display: block;
+    border: 1px solid #375a5c;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+main a {
+    text-decoration: none;
+    color: #375a5c;
+}
+
+#esqueceu-senha:active a, #esqueceu-senha:active span {
+    color: white;
+}
+
+#esqueceu-senha:active {
+    background-color: #375a5c;
+}
+
+#esqueceu {
+    font-size: 0.9em;
+    color: #375a5c;
+}
+
