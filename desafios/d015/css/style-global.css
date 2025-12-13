@@ -69,14 +69,12 @@ input[type='email'], input[type='password'] {
     display: inline-block;
     background-color: #b4fbff;
     color: black;
-    width: 200px;
+    width: calc(100% - 40px); /*NOVO*/
     padding: 5px 0px;
 }
 
 input[type='email']::placeholder, input[type='password']::placeholder {
     color: #000000a5;
-    
-    
 }
 
 #senha, #usuario {
@@ -129,3 +127,4 @@ main a {
     color: #375a5c;
 }
 
+/*TODAS AS TRANSFORMAÇÕES FAZER NO FINAL DA LINHA*/

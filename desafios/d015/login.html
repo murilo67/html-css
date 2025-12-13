@@ -17,11 +17,11 @@
             <form action="cadastro.php" method="post">
                 <div id="campo-email">
                     <span class="material-symbols-outlined" id="usuario">person</span>
-                    <input type="email" name="email" id="iemail" placeholder="Seu email">
+                    <input type="email" name="email" id="iemail" placeholder="Seu email" required autocomplete="email">
                 </div>
                 <div id="campo-senha">
                     <span class="material-symbols-outlined" id="senha">key</span>
-                    <input type="password" name="senha" id="isenha" placeholder="Sua senha">
+                    <input type="password" name="senha" id="isenha" placeholder="Sua senha" required autocomplete="current-password" minlength="8">
                 </div>
                 <input type="submit" value="Entrar" >
                 <div id="esqueceu-senha">
