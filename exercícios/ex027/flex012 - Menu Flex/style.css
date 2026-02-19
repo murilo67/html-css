@@ -34,6 +34,12 @@ header div {
     border-radius: 5px;
 }
 
+div:hover {
+    background-color: white;
+    color: black;
+    transition: background-color .5s;
+}
+
 main {
     background-color: white;
     margin: 10px auto;
