@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .grade {
+            border: 1px solid black;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: #6097ff99;
+            display: grid;
+            grid-template: 2fr 1fr 5fr 1fr / 3fr 1fr;
+            text-align: center;
+            gap: 5px;
+        }
+
+        .topo {
+            grid-area: 1 / 1 / 2 / span 2;
+        }
+
+        .menu {
+            grid-area: 2 / 1 / 3 / span 2;
+        }
+
+        .main {
+            grid-area: 3 / 1 / span 1 / span 1;
+        }
+
+        .secundario {
+            grid-area: 3 / 2 / span 1 / span 1;
+        }
+
+        .rodape {
+            grid-area: -2 / 1 / -1 / span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="topo grade">Topo</div>
+        <div class="menu grade">Menu</div>
+        <div class="main grade">Principal</div>
+        <div class="secundario grade">Secundário</div>
+        <div class="rodape grade">Rodapé</div>
+    </div>
+</body>
+</html>
